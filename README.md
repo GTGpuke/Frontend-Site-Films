@@ -1,8 +1,6 @@
 # Frontend du projet.
 Un frontend React en TypeScript permettant d’afficher, ajouter et supprimer des films à partir de l’API en Node.js/Express.
 
-> [!NOTE]  
-> Les commandes sont à lancer avec bash.
 ## Installation et configuration du projet.
 
 ### Clonez le projet et installez les dépendances.
