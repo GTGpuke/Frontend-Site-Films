@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Composant de navigation.
 export default function Nav() {
   return (
     <nav className="nav">

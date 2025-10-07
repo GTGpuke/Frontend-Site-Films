@@ -5,6 +5,7 @@ import FilmList from "./components/FilmList";
 import FilmForm from "./components/FilmForm";
 import "./styles.css";
 
+// Composant principal de l'application.
 function App() {
   return (
     <BrowserRouter>

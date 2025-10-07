@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createFilm } from "../api";
 import { useNavigate } from "react-router-dom";
 
+// Formulaire pour ajouter un film.
 export default function FilmForm() {
   const [title, setTitle] = useState("");
   const [year, setYear] = useState("");
@@ -21,7 +22,8 @@ export default function FilmForm() {
       setSaving(false);
     }
   }
-
+  
+  //Code HTML du formulaire.
   return (
     <form onSubmit={onSubmit} className="form">
       <h2>Ajouter un film</h2>

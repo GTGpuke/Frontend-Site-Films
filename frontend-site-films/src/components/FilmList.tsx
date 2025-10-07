@@ -3,11 +3,13 @@ import { fetchFilms, removeFilm, Film } from "../api";
 import FilmItem from "./FilmItem";
 import { useNavigate } from "react-router-dom";
 
+// Composant pour afficher la liste des films.
 export default function FilmList() {
   const [films, setFilms] = useState<Film[]>([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+// Charger les films au montage du composant.
   useEffect(() => {
     async function load() {
       try {
@@ -22,6 +24,7 @@ export default function FilmList() {
     load();
   }, []);
 
+// Supprimer un film.
   async function onDelete(id: number) {
     if (!window.confirm("Supprimer ce film ?")) return;
     try {
@@ -32,6 +35,7 @@ export default function FilmList() {
     }
   }
 
+// Code HTML de la liste des films.
   return (
     <div>
       <div className="header">
